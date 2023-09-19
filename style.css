@@ -1,0 +1,268 @@
+html {
+  overflow-y: scroll;
+}
+@font-face {
+  font-family: "Dabir-VF";
+  src: url("./DabirVF.ttf");
+  }
+@font-face {
+  font-family: 'Estedad';
+  src: url('./Estedad.woff2')}
+body {
+  display: grid;
+  background-color: #fdfdfd;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+main{
+  direction: ltr;
+  margin: 1.5em 22em 1.5em 1.5em;
+  font-family: "Dabir-VF";
+  line-height: 1.05;
+  word-break: break-word;
+}
+.aside-child{
+    width: 100%;
+	overflow-y: hidden;
+    height: 100%;
+    padding-left: 17px;
+	box-sizing: content-box;
+}
+ /* Hide scrollbar for Chrome, Safari and Opera */
+.aside-child::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.aside-child {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+} 
+sup{
+  font-size: 12px;
+}
+aside{
+  font-family: "Estedad";
+  width: 17.3em;
+  position: fixed;
+  top: 1em;
+  right: 1.5em;
+  z-index: 1;
+  display: block;
+  line-height: 1.5;
+  overflow: hidden;
+  height: 90%;
+  right: 38px;
+}
+#FontToggle{
+  background-color: transparent;
+}
+
+main, aside {
+  padding: 1em 2em;
+  color: #222;
+  background-color: #fdfdfd;
+  border-radius: 0.5em;
+}
+
+form {
+  font-family: "Estedad";
+  /* background-color: #fdfdfd; */
+  border-radius: 0.2em;
+}
+::selection {
+    background-color: #ff8080;
+}
+input,
+button,
+textarea,
+select {
+  /* font-size: 12px; */
+  color: Black;
+  font-family: "Estedad";
+  outline: none;
+}
+*:focus {
+    outline: none;
+}
+h1 {
+  color: #222;
+  font-family: "Dabir-VF";
+  font-weight: 500;
+  font-size: 40px;
+}
+a {
+  font-weight: 700;
+  outline: none;
+  text-decoration: none;
+  cursor:pointer;
+  color: Black;
+}
+
+form p {
+  margin-top: -0.5em;
+}
+
+form p:first-child {
+  margin-top: 0;
+}
+
+form p:last-child {
+  margin-bottom: 0;
+}
+
+form p > span {
+  display: flex;
+  justify-content: space-between;
+}
+
+form button {
+  background-color: transparent;
+  padding: 0.25em 0.5em;
+  margin-left: 0.5em;
+  border: none;
+  border-radius: 0;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 5px;
+  font: 18px Estedad;
+}
+
+.tab button.active {
+  color: Black;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+@media screen and (min-width: 50em) {
+  body {
+    display: grid;
+    grid-template-areas:
+    "main aside"
+}
+    grid-gap: 0;
+  }
+  input[type="range"] {
+    margin-top: 8px;
+    -webkit-appearance: none;
+  	-moz-appearance: none;
+  	background: #dddddd55;
+  	border-radius: 2px;
+    width: 100%;
+    height: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+    outline: 0;
+    border: none;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #555;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 0px;
+  }
+    input[type="range"]::-moz-range-thumb {
+      -moz-appearance: none;
+      background-color: #555;
+      width: 14px;
+      height: 14px;
+      border-radius: 100%;
+      cursor: pointer;
+      border: 0px;
+    }
+      input[type="checkbox"]:checked {
+        background: #808080;
+        outline: none;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 10px;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        height: 14px;
+        width: 14px;
+        outline: 1px solid #808080;
+        background: transparent;
+      }
+
+.social-list {
+    text-align: center;
+    font-size: 0;
+}
+.social-list li {
+    display: inline-block;
+    width: 60px;
+    position: relative;
+}
+.social-list {
+    padding-left: 0px;
+    text-align: center;
+    font-size: 0;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+.social-list li > a > svg {
+    top: 10%;
+    width: 40%;
+    height: 40%;
+    fill: #888;
+}
+#tabcontentselector {
+  padding: 5px 5px;
+  border: none;
+  color: Black;
+  background-color: #ffffff00;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 15px;
+}
+
+.collapsible {
+  background-color: transparent;
+  color: Black;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  background-color: #88888811;
+  margin: 5px;
+}
+
+.content {
+  padding: 0 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
