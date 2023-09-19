@@ -1,5 +1,5 @@
 # Dabir
-![Dabir](https://github.com/aminabedi68/Dabir/tree/main/documentation/Dabir-v2.0.png)
+![Dabir](documentation/Dabir-v2.0.png)
 Dabir is an italic serif Latin typeface first designed to complete the Latin part of [Dabir typeface](https://maryamsoft.com/product/fontshop/main/dabir-htm/)(which is a calligraphic perso-arabic type family)
 This font has several design connection with the that font and equal(or include in range of) weight, contrast, slant angle… but also has its own identity as a modern italic serif typeface. Dabir supports ~80% of Latin script characters(in decompositional glyph forms), Latin ligatures, slashed zero and old style numbers.
 
