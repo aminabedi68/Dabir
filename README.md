@@ -5,11 +5,11 @@ This font has several design connection with the that font and equal(or include 
 
 ## Variable font Axes:
 ![weight/slant/optical-size](documentation/weight_slant_optical-size.png)
-Weight: 300(Light) to 700(Bold) with nonlinearity
-Slant: 8.5° to 18.5°
-Optical Size(beta): 10 to 72
-![optical-size-on-off](documentation/optical-size.png)
-optical size axis in this font affecting on glyphs contrast, side bearings and design(in some cases). 
+<br>Weight: 300(Light) to 700(Bold) with nonlinearity
+<br>Slant: 8.5° to 18.5°
+<br>Optical Size(beta): 10 to 72
+<br>optical size axis in this font affecting on glyphs contrast, side bearings and design(in some cases). 
+<br>![optical-size-on-off](documentation/optical-size.png)
 
 ## Build:
 Install fontmake and run: `fontmake -o variable -g Dabir.glyphs`
