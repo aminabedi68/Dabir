@@ -15,9 +15,7 @@ function refreshFeatures() {
 	if (document.getElementById("kern")) codeCSS3 += !document.getElementById("kern").checked ? '"kern" off, ' : '"kern" on, ';
 	if (document.getElementById("liga")) codeCSS3 += !document.getElementById("liga").checked ? '"liga" off, ' : '"liga" on, ';
 	if (document.getElementById("calt")) codeCSS3 += !document.getElementById("calt").checked ? '"calt" off, ' : '"calt" on, ';
-	if (document.getElementById("ccmp")) codeCSS3 += !document.getElementById("ccmp").checked ? '"ccmp" off, ' : '"ccmp" on, ';
 	if (document.getElementById("rvrn")) codeCSS3 += !document.getElementById("rvrn").checked ? '"rvrn" off, ' : '"rvrn" on, ';
-	if (document.getElementById("mark")) codeCSS3 += !document.getElementById("mark").checked ? '"mark" off, ' : '"mark" on, ';
 
 	if (document.getElementById("dlig")) codeCSS3 += !document.getElementById("dlig").checked ? '' : '"dlig", ';
 	if (document.getElementById("hlig")) codeCSS3 += !document.getElementById("hlig").checked ? '' : '"hlig", ';
